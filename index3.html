@@ -1,1 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="csss.css">
+<link rel="icon" href="Search-Scool-color (2).webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<meta charset="utf-8">
+<style >
+
+	.img_search input{
+ 	height: 40px;
+ 	width: 600px;
+ 	font-size: 13px;
+ 	box-shadow:5px 5px 20px black 
+ }
+
+#OK{
+	background-color: rgb(0,242,0);
+	width: 100px;
+	font-size: 15px;
+	border-radius: 5px;
+	border:none;
+	color: white;
+
+
+}
+
+.img_search{
+	padding:10px;
+	text-align: center;
+	background-color: black;
+	opacity: 0.9;
+}
+
+*{background-image:url("");
+        background-size: 100%;
+     background-repeat: no-repeat;
+     font-family: 'Merriweather', serif;
+
+   }
+
+
+footer {
+	background-color: #070930;
+	display:flex;
+	height:100px;
+	width:100%;
+	position:sticky;
+	margin-top: 0px;
+	}
+
+
+	.pub-hotel{
+  	margin-left: 150px;
+  }
+
+
+  footer p{
+  	color: white;
+  	font-size: 16px;
+  	margin-left: 650px;
+  	font-family: sans-serif;
+  	margin-top: 30px;
+  }
+
+.blog_qui_sommes_nous{
+	font-size: 17px;
+	color: rgb(0,242,0);
+
+}
+
+#web{
+	float: left;
+	margin: 20px;
+
+}
+
+.pays{
+	margin-left:120px;
+}
+
+article{
+    margin-top:250px;
+	text-align: justify;
+	color:white;
+    margin-right:100px;
+    margin-left:100px;
+    height:350px; 
+    position :absolute;
+	top:0px;
+	overflow:hidden;
+	z-index:5;
+	
+	
+	
+}
+
+article strong::after{
+   content: "";
+   display: block;
+   position: absolute;
+   height: 3px;
+   width: 0%;
+   margin: 0 auto;
+   background: white;
+   transition: width 0.2s ease-in-out;
+   margin-top: 20px;
+}
+
+article strong:hover::after{
+   width:100%;
+     
+}
+
+
+article p .char{
+	visibility: hidden;
+	animation: animate 0s steps(2) forwards;
+	animation-delay: calc(0.04s * var(--char-index));
+}
+@keyframes animate{
+	0%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+
+
+
+  
+.blog_article2{
+   
+
+	background-color: white;
+ 	position: sticky;
+ 	margin-top:550px;
+ 	margin-left:450px;
+ 	margin-right:450px;
+   height:690PX ;
+   border-radius: 20px 20px 20px 20px;
+   text-align: justify; 
+   box-sizing: border-box;
+   box-shadow: 0 0 10px #000;
+   font-family: 'Merriweather', serif;
+
+}
+
+
+
+
+article  p{
+	font-size: 1.7em;
+	text-align:justify;
+	margin-top: 100px;
+	font-family: 'Playfair Display', serif;
+}
+
+ p{
+	margin:20px;
+	font-size:13px;
+	text-align:justify;
+	
+   font-family: 'Merriweather', serif;
+
+}
+
+
+ aside {
+ 	background-color: white;
+ 	position: absolute;
+ 	top:710px;
+ 	margin-left:1160px;
+ 	margin-right:60px;
+     height:690PX ;
+    width:400px;
+   border-radius:25px;
+   text-align: justify;
+     box-sizing: border-box;
+   box-shadow: 0 0 10px #000;
+   font-family: 'Merriweather', serif;
+ 
+    
+    
+ } 
+
+ 
+ 
+  aside2{
+ 	background-color: white;
+ 	position: absolute;
+ 	top:709px;
+ 	margin-right:1160px;
+ 	margin-left:25px;
+   height:690PX ;
+   width:400px;
+   border-radius:20px;
+   box-sizing: border-box;
+   box-shadow: 0 0 10px #000;
+   font-family: 'Merriweather', serif;
+
+   
+   
+  
+    
+    
+ } 
+
+ 	center input {
+ 	height: 40px;
+ 	width: 200px;
+ 	font-size: 17px;
+		
+}
+
+
+
+
+#inscrire{
+	background-color: white;
+	width: 200px;
+	font-size: 17px;
+	border-radius: 6px;
+	border:none;
+	color: rgb(0,242,0);
+	box-shadow:0px 0px 10px #000 ;
+	opacity: 0.5;
+	font-family: 'Merriweather', serif;
+
+
+}
+#inscrire:hover{
+	
+  	transform: scale(1.19);
+ 	transition: all 0.3s ease-in-out;
+ 	background-color:rgb(0,242,0);
+ 	color: white;
+ 	
+
+ }
+
+ .pagraphe2 p{
+ 	border: 1px solid rgb(0,242,0);;
+ 	
+ }
+	#scool{
+		float: left;
+		margin-left: 300px;
+	}
+	#s{
+		margin-top: 20px;
+		margin-left:-350px;
+	}
+
+
+
+.blog_qui_sommes_nous{
+	background-color: red;
+	opacity: 0.8;
+	border-radius: 20px 20px 0px 0px;
+	padding: 8px;
+	box-shadow: 0px 0px 10px #000;
+	color: white;
+   
+
+}
+
+
+
+
+
+.blog_enseigement_de_haute_qualité{
+	background-color: red;
+	opacity: 0.8;
+	border-radius: 25px 25px 0px 0px;
+	padding: 8px;
+	box-shadow: 0px 0px 10px #000;
+	color: white;
+   
+
+}
+
+
+
+
+.blog_enseigement_de_haute_qualité{
+	font-size: 17px;
+	color:white;
+
+}
+
+
+.blog_inscription_au_senegal{
+	background-color: red;
+	opacity: 0.8;
+	border-radius: 20px 20px 0px 0px;
+	padding: 8px;
+	box-shadow: 0px 0px 10px #000;
+	color: white;
+
+
+}
+
+
+
+
+.section1{
+	background: url("unhappy-male-student-typing-keyboard-brunette-freelancer-glasses-using-laptop-work(1).jpg");
+	background-size:cover;
+     background-position: center center;
+     background-attachment: fixed;
+
+	height: 100vh;
+	width: 100%;
+
+}
+
+
+section{
+	background: url("modern-person-holding-laptop-to-use-technology-on-camera-in-studio-portrait-of-young-woman-looking-at-digital-device-screen-and-working-online-while-standing-over-isolated-background.jpg");
+	background-size:cover;
+     background-position: center center;
+     background-attachment: fixed;
+
+    height: 100vh;
+	width: 100%;
+
+}
+</style>
+</head>
+<body>
+	
+<nav>
+<ul>
+<img src="Search Scool color.png" width="200" height="65" div id="logo">
+ <img src="pub-hotel.GIF" width="400" height="70" class="pub-hotel">
+    <li><a href="inscription.php"><img src="user-plus-solid.svg" width="20" height="20" class="U"/>Inscription </a></li>
+	<li><a href="A propos.html"><img src="user-solid.svg" width="20" height="20" class="U"/>A propos</a></li>
+  <li><a href="Annonce.html"><img src="align-justify-solid.svg" width="20" height="20" class="U"/>Annonce</a></li>
+  <li><a href="index3.html"><img src="house-user-solid.svg" width="20" height="20" class="U"/>Accueil</a></li>
+</ul>
+</nav>
+<section >
+	<div class="img_search">
+	<img src="Search Scool color.png" height="70" width="200" id="scool">
+	<form method="GET"  action="Recherche.php">
+   <input type="search" name="s" id="s" placeholder=" " >
+	<input type="submit" name="submit" value="Recherche" id="OK">
+    </div>
+</form>
+</center>
+ 
+	
+<article data-splitting  >
+	<strong>
+<p>N°1 Du Soutien Scolaire Et De L'Orientation <br>
+Search-school est une plateforme, de soutien scolaire et de préinscription pour tous les étudiants africains désirant poursuivre leurs études à l'étranger. Elle vous permet également d'obtenir des bourses nationales et internationales.</strong></p>
+
+</article>
+
+<div class="blog_article2" data-aos="zoom-in"data-aos-delay="50">
+<div class="blog_qui_sommes_nous"><center>QUI SOMMES NOUS ?</center></div>
+<br>
+<img src="Capture d’écran 2018-09-01 à 19_37_36_pn.webp"  width="400"  height="250" id="web"><p>Fondé Par Des jeunes entrepreneurs et d'ingénieurs Africains Qui ont fait leurs études supérieures un peu partout dans le monde, Notre mission est d'aider Les Étudiants Africains Qui Souhaitent Poursuivre Leurs études Supérieures En France, Au Canada, aux USA ou d'autres pays.
+<br><br><br><br>
+De par leurs études d'excellence suivies depuis le Bac, leurs expériences personnelle et professionnelle développées et entretenues au fil de ces dernières années, leur conception et vision du monde d'aujourd'hui, les associés du cabinet SoluEtude apportent une diversité et une qualité jamais constatées dans ce domaine. Ils sont forts de proposition quant à l'information et l'orientation des élèves pour la poursuite d'études. Ayant tous fait leurs études dans des domaines divers et variés, allant des Télécoms aux Mathématiques Appliquées en passant par l'Informatique, l’Électronique, la Physique Appliquée, le Management,la Comptabilité, la Finance, le Droit etc..., ils couvrent  la majorité des demandes d'information de la part des étudiants.
+<br><br>
+<br><br>
+
+ 
+
+Nos collaborateurs qui sont partout dans le monde vous aideront à obtenir tous les documents nécessaires ( pré-inscription, attestation d'hébergement, logement  etc..) pour l'obtention de votre visa. Après l'obtention de ce dernier , ils vous accueilleront dans votre pays d'arrivée, vous aideront à trouver un logement, vous accompagneront dans vos démarches administratives.</p><br>
+
+</div>
+
+
+	<aside data-aos="zoom-in" data-aos-delay="20">
+		<div class="blog_article3">
+		<div class="blog_enseigement_de_haute_qualité"><center>ENSEIGNEMENT DE HAUTE QUALITÉ</center></div>
+<br>
+ <img src="22089997_1167713206693438_34551507256580.webp"  width="360"  height="250" id="web"><p >SoluEtude insiste sur la pédagogie et la méthodologie avec ses encadrants, avec des évaluations, des suivis et des bilans réguliers. Il ne suffit pas d’être à l’aise avec tel ou tel contenu pour s’autoproclamer professeur, il faut avoir l’art et la manière de le transmettre!
+<br><br>
+   <center>
+  <form method="GET"  action="Recherche.php">
+	<input type="submit" name="s'inscrire" value="S'inscrire" id="inscrire">
+   </center><br><br><br><br><br><br><br>
+   
+</aside>
+
+<aside2 data-aos="zoom-in" data-aos-delay="0">
+	<div class="blog_article4">
+		<div class="blog_inscription_au_senegal"><center>PRÉ-INSCRIPTION AU SÉNÉGAL</center></div>
+<br>
+ <img src="14372034_923791667752261_560640065988030.webp"  width="360"  height="250" id="web"><p>SoluEtude est un cabinet d'orientation, de soutien scolaire et de préinscription pour tous les étudiants africains désirant poursuivre leurs études à l'étranger. En collaboration avec des universités, des écoles de commerce, des IUT, des Classes Préparatoires aux Grandes Ecoles de la France, de la Tunisie, du Maroc, du Canada, des USA, de l'Angleterre et de la Belgique, SoluEtude oriente, accompagne, épaule et aide toutes les personnes qui le souhaitent, à réaliser son projet d’étude à l'étranger.</p></div>
+
+ <br><br>
+   <center>
+  <form method="GET"  action="Recherche.php">
+	<input type="submit" name="s'inscrire" value="S'inscrire" id="inscrire">
+   </center><br>
+</aside2>
+
+
+</section >
+<section class="section1"></section>
+
+
+<footer>
+
+<center><p>©2022 Search-school. Copyright by Search-school </p></center>
+</footer>
+
+<script>
+  AOS.init();
+</script>
+<script> Splitting(); </script>
+
+</body>
+</html>
